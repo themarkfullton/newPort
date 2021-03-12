@@ -1,0 +1,28 @@
+@import "variables", "intro";
+
+body {
+    background-color: $secondary-colour;
+    width: 100vw;
+    font-family: $body-font-fam;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @include fluid-type(320px, 1200px, 12px, 20px);
+    letter-spacing: 0.1rem;
+    line-height: 1.6rem;
+    color: $text-colour;
+  
+    a {
+      color: $highlight-colour;
+      font-weight: bolder;
+      text-decoration: none;
+      @include transition-time;
+  
+      &:hover {
+        color: $primary-colour;
+      }
+    }
+  }
+  
+  h1 {
+    line-height: 1.8rem;
+  }

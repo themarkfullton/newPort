@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Staatliches&display=swap");
+.introContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #0099cc;
+  background-image: url("../../containers/Intro/beach.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: hidden;
+  z-index: 5;
+}
+.introContainer h1 {
+  color: #fff;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.95rem;
+  line-height: 1em;
+  border-top: 1px solid #fff;
+  padding-top: 1vh;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+}
+.introContainer h1 {
+  font-size: 47px;
+}
+@media screen and (min-width: 320px) {
+  .introContainer h1 {
+    font-size: calc( 47px + 23 * ((100vw - 320px) / 880) );
+  }
+}
+@media screen and (min-width: 1200px) {
+  .introContainer h1 {
+    font-size: 70px;
+  }
+}
+.introContainer h2 {
+  color: #fff;
+  margin-bottom: 1em;
+}
+.introContainer h2 {
+  font-size: 15px;
+}
+@media screen and (min-width: 320px) {
+  .introContainer h2 {
+    font-size: calc( 15px + 5 * ((100vw - 320px) / 880) );
+  }
+}
+@media screen and (min-width: 1200px) {
+  .introContainer h2 {
+    font-size: 20px;
+  }
+}
+.introContainer p a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5em;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+.introContainer p a {
+  font-size: 13px;
+}
+@media screen and (min-width: 320px) {
+  .introContainer p a {
+    font-size: calc( 13px + 5 * ((100vw - 320px) / 880) );
+  }
+}
+@media screen and (min-width: 1200px) {
+  .introContainer p a {
+    font-size: 18px;
+  }
+}
+.introContainer p a:hover {
+  color: #ffcc11;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.introContainer p span {
+  font-weight: bolder;
+}
+.introContainer .adventureImage {
+  position: absolute;
+  bottom: 3vw;
+  left: 3vw;
+  width: 30vw;
+  -webkit-animation: surf 5s infinite ease-in-out;
+          animation: surf 5s infinite ease-in-out;
+  z-index: 9;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+
+@-webkit-keyframes surf {
+  0%, 100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  20% {
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  80% {
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+  }
+}
+
+@keyframes surf {
+  0%, 100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  20% {
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  80% {
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+  }
+}
+@media (max-width: 900px) {
+  .introContainer .adventureImage {
+    width: 35vw;
+  }
+}
+@media (max-width: 800px) {
+  .introContainer .adventureImage {
+    width: 40vw;
+  }
+}
+@media (max-width: 629px) {
+  .introContainer .adventureImage {
+    width: 50vw;
+  }
+}
+body {
+  background-color: #66ccff;
+  width: 100vw;
+  font-family: "Questrial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.1rem;
+  line-height: 1.6rem;
+  color: #000;
+}
+body {
+  font-size: 12px;
+}
+@media screen and (min-width: 320px) {
+  body {
+    font-size: calc( 12px + 8 * ((100vw - 320px) / 880) );
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+body a {
+  color: #ffcc11;
+  font-weight: bolder;
+  text-decoration: none;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+body a:hover {
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.8rem;
+}/*# sourceMappingURL=style.css.map */

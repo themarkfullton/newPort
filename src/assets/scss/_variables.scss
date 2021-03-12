@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Staatliches&display=swap");
+
+$header-font-fam: "Staatliches", cursive;
+$body-font-fam: "Questrial", sans-serif;
+
+$background-colour: #0099cc;
+$primary-colour: #fff;
+$highlight-colour: #ffcc11;
+$secondary-colour: #66ccff;
+$tertiary-colour: #0099cc;
+$text-colour: #000;
+$secondary-text-colour: #42426f;
+
+@mixin transition-time() {
+  transition: all 1.2s;
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(
+          #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}

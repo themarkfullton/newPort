@@ -1,0 +1,109 @@
+.introContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: $background-colour;
+    background-image: url("../../containers/Intro/beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    z-index: 5;
+  
+    h1 {
+      color: $primary-colour;
+      font-family: $header-font-fam;
+      letter-spacing: 0.95rem;
+      line-height: 1em;
+      border-top: 1px solid $primary-colour;
+      padding-top: 1vh;
+      border-bottom: 1px solid $primary-colour;
+      padding-bottom: 1vh;
+      margin-bottom: 2vh;
+      @include fluid-type(320px, 1200px, 47px, 70px);
+    }
+  
+    h2 {
+      color: $primary-colour;
+      margin-bottom: 1em;
+      @include fluid-type(320px, 1200px, 15px, 20px);
+    }
+  
+    p {
+      a {
+        display: inline-block;
+        color: $primary-colour;
+        text-decoration: none;
+  
+        margin: 0 0.5em;
+        @include transition-time;
+        @include fluid-type(320px, 1200px, 13px, 18px);
+  
+        &:hover {
+          color: $highlight-colour;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+  
+      span {
+        font-weight: bolder;
+      }
+    }
+  
+    .adventureImage {
+      position: absolute;
+      bottom: 3vw;
+      left: 3vw;
+      width: 30vw;
+      animation: surf 5s infinite ease-in-out;
+      z-index: 9;
+      @include transition-time;
+    }
+  }
+  
+  @keyframes surf {
+    0%,
+    100% {
+      transform: rotate(-10deg);
+    }
+    20% {
+      transform: scale(0.97);
+    }
+    50% {
+      transform: rotate(20deg);
+    }
+    80% {
+      transform: scale(0.97);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .introContainer {
+      .adventureImage {
+        width: 35vw;
+      }
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .introContainer {
+      .adventureImage {
+        width: 40vw;
+      }
+    }
+  }
+  
+  @media (max-width: 629px) {
+    .introContainer {
+      .adventureImage {
+        width: 50vw;
+      }
+    }
+  }
+  
