@@ -7,7 +7,7 @@ function WorkHistory(){
         <div className="workHistoryWrapper">
             <div className="workHistoryContainer">
                 <Router>
-                    <h2>Work History <a href="https://docs.google.com/document/d/1G8vSpxk5fgsGQKU68AD8qn_hNpKli4KAtbjFJwTeyks/edit?usp=sharing" target="_blank"><i class="fas fa-file-download"></i></a></h2>
+                    <h2><i className="fas fa-anchor"></i> Work History <a href="https://docs.google.com/document/d/1G8vSpxk5fgsGQKU68AD8qn_hNpKli4KAtbjFJwTeyks/edit?usp=sharing" target="_blank"><i class="fas fa-file-download"></i></a></h2>
 
                     <div className="workHistoryNavbar">
                         <NavLink to={{

@@ -328,6 +328,160 @@
   transition: all 1.2s;
 }
 
+.workHistoryWrapper {
+  padding-bottom: 10vh;
+  background: #0099cc;
+}
+.workHistoryWrapper .workHistoryContainer {
+  width: 90%;
+  margin: 5vh auto;
+}
+.workHistoryWrapper .workHistoryContainer h1 {
+  color: #000;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.95rem;
+  line-height: 1.5em;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+}
+.workHistoryWrapper .workHistoryContainer h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .workHistoryWrapper .workHistoryContainer h1 {
+    font-size: calc( 30px + 10 * ((100vw - 320px) / 880) );
+  }
+}
+@media screen and (min-width: 1200px) {
+  .workHistoryWrapper .workHistoryContainer h1 {
+    font-size: 40px;
+  }
+}
+.workHistoryWrapper .workHistoryContainer h1 a {
+  opacity: 0.7;
+  color: #000;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+.workHistoryWrapper .workHistoryContainer h1 a:hover {
+  opacity: 1;
+}
+.workHistoryWrapper .workHistoryContainer .workHistoryNavbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4vw;
+}
+.workHistoryWrapper .workHistoryContainer .workHistoryNavbar .workHistItem {
+  opacity: 0.5;
+  color: #000;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.25em;
+  text-decoration: none;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+.workHistoryWrapper .workHistoryContainer .workHistoryNavbar .workHistItem {
+  font-size: 10px;
+}
+@media screen and (min-width: 320px) {
+  .workHistoryWrapper .workHistoryContainer .workHistoryNavbar .workHistItem {
+    font-size: calc( 10px + 20 * ((100vw - 320px) / 880) );
+  }
+}
+@media screen and (min-width: 1200px) {
+  .workHistoryWrapper .workHistoryContainer .workHistoryNavbar .workHistItem {
+    font-size: 30px;
+  }
+}
+.workHistoryWrapper .workHistoryContainer .workHistoryNavbar .workHistItem:hover {
+  opacity: 1;
+}
+.workHistoryWrapper .workHistoryContainer .workHistoryNavbar .workHistItem:active {
+  opacity: 1;
+}
+
+.wHComponentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+.wHComponentWrapper .wHImageSide {
+  width: 35%;
+  overflow: hidden;
+}
+.wHComponentWrapper .wHImageSide .wHImageImage {
+  width: 100%;
+}
+.wHComponentWrapper .wHTextSide {
+  width: 61%;
+}
+.wHComponentWrapper .wHTextSide .wHTitle {
+  font-family: "Staatliches", cursive;
+  border-bottom: 2px #000 solid;
+  margin-bottom: 0.5em;
+}
+.wHComponentWrapper .wHTextSide .wHTitle {
+  font-size: 22px;
+}
+@media screen and (min-width: 320px) {
+  .wHComponentWrapper .wHTextSide .wHTitle {
+    font-size: calc( 22px + 13 * ((100vw - 320px) / 880) );
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wHComponentWrapper .wHTextSide .wHTitle {
+    font-size: 35px;
+  }
+}
+.wHComponentWrapper .wHTextSide .wHBullets {
+  margin-top: 3vw;
+}
+.wHComponentWrapper .wHTextSide .wHBullets ul {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 97%;
+}
+.wHComponentWrapper .wHTextSide .wHBullets ul li {
+  display: inline;
+  padding: 0.5vw;
+  margin: 0.25em;
+  background: #000;
+  color: #0099cc;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+.wHComponentWrapper .wHTextSide .wHBullets ul li {
+  font-size: 10px;
+}
+@media screen and (min-width: 320px) {
+  .wHComponentWrapper .wHTextSide .wHBullets ul li {
+    font-size: calc( 10px + 10 * ((100vw - 320px) / 880) );
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wHComponentWrapper .wHTextSide .wHBullets ul li {
+    font-size: 20px;
+  }
+}
+
 .footerWrapper {
   position: relative;
   width: 100%;

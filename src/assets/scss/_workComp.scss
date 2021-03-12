@@ -1,0 +1,50 @@
+.wHComponentWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  
+    .wHImageSide {
+      width: 35%;
+      overflow: hidden;
+  
+      .wHImageImage {
+        width: 100%;
+      }
+    }
+  
+    .wHTextSide {
+      width: 61%;
+  
+      .wHTitle {
+        font-family: $header-font-fam;
+        border-bottom: 2px $text-colour solid;
+        margin-bottom: 0.5em;
+        @include fluid-type(320px, 1200px, 22px, 35px);
+      }
+  
+      .wHBullets {
+        margin-top: 3vw;
+        ul {
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          width: 97%;
+  
+          li {
+            display: inline;
+            padding: 0.5vw;
+            margin: 0.25em;
+            background: $text-colour;
+            color: $tertiary-colour;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bolder;
+            @include fluid-type(320px, 1200px, 10px, 20px);
+          }
+        }
+      }
+    }
+  }
+  
