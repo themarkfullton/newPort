@@ -1,0 +1,51 @@
+.aboutWrapper {
+    margin: 100vh 0 5vh 0;
+    width: 100%;
+    background: $tertiary-colour;
+    line-height: 1.8em;
+  
+    &:before {
+      content: "";
+      position: relative;
+      background: $tertiary-colour;
+      top: 0;
+      display: block;
+      height: 10vh;
+      width: 95%;
+      left: 0;
+      right: 0;
+      transform: skewY(1.85deg);
+      transform-origin: 100%;
+      z-index: 9;
+    }
+  
+    h1 {
+      color: $text-colour;
+      font-family: $header-font-fam;
+      letter-spacing: 0.95rem;
+      line-height: 1.5em;
+      border-bottom: 1px solid $text-colour;
+      padding-bottom: 1vh;
+      margin-bottom: 2vh;
+      @include fluid-type(320px, 1200px, 30px, 40px);
+    }
+  
+    .aboutContainer {
+      width: 85%;
+      margin: 5% auto;
+  
+      b {
+        font-weight: bolder;
+      }
+  
+      a {
+        color: $primary-colour;
+        @include transition-time;
+  
+        &:hover {
+          color: $highlight-colour;
+        }
+      }
+    }
+  }
+  

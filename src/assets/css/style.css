@@ -160,15 +160,76 @@
     width: 50vw;
   }
 }
+.aboutWrapper {
+  margin: 100vh 0 5vh 0;
+  width: 100%;
+  background: #0099cc;
+  line-height: 1.8em;
+}
+.aboutWrapper:before {
+  content: "";
+  position: relative;
+  background: #0099cc;
+  top: 0;
+  display: block;
+  height: 10vh;
+  width: 95%;
+  left: 0;
+  right: 0;
+  -webkit-transform: skewY(1.85deg);
+          transform: skewY(1.85deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  z-index: 9;
+}
+.aboutWrapper h1 {
+  color: #000;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.95rem;
+  line-height: 1.5em;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+}
+.aboutWrapper h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .aboutWrapper h1 {
+    font-size: calc( 30px + 10 * ((100vw - 320px) / 880) );
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aboutWrapper h1 {
+    font-size: 40px;
+  }
+}
+.aboutWrapper .aboutContainer {
+  width: 85%;
+  margin: 5% auto;
+}
+.aboutWrapper .aboutContainer b {
+  font-weight: bolder;
+}
+.aboutWrapper .aboutContainer a {
+  color: #fff;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+.aboutWrapper .aboutContainer a:hover {
+  color: #ffcc11;
+}
+
 body {
-  background-color: #66ccff;
-  width: 100vw;
+  background-color: #0099cc;
+  width: 100%;
   font-family: "Questrial", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.1rem;
   line-height: 1.6rem;
   color: #000;
+  margin: 0;
 }
 body {
   font-size: 12px;
@@ -193,7 +254,9 @@ body a {
 body a:hover {
   color: #fff;
 }
-
-h1 {
+body h1 {
   line-height: 1.8rem;
+}
+body .App {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

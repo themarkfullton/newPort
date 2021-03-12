@@ -1,12 +1,15 @@
-import Intro from "./Containers/Intro";
 import "./assets/css/style.css";
+
+import Intro from "./Containers/Intro";
+import About from "./Containers/About";
+
 
 function App() {
   return (
     <div className="App">
       {/* NAVBAR */}
       <Intro />
-      {/* About */}
+      <About />
       {/* Projects */}
       {/* WorkHistory */}
     </div>

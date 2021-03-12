@@ -1,8 +1,8 @@
-@import "variables", "intro";
+@import "variables", "intro", "about";
 
 body {
-    background-color: $secondary-colour;
-    width: 100vw;
+    background-color: $tertiary-colour;
+    width: 100%;
     font-family: $body-font-fam;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -10,6 +10,8 @@ body {
     letter-spacing: 0.1rem;
     line-height: 1.6rem;
     color: $text-colour;
+    margin: 0;
+
   
     a {
       color: $highlight-colour;
@@ -21,8 +23,13 @@ body {
         color: $primary-colour;
       }
     }
-  }
+
   
   h1 {
     line-height: 1.8rem;
   }
+
+  .App{
+    margin: 0;
+  }
+}
