@@ -6,7 +6,7 @@ phases:
       - echo Installing Node 10
       - curl -fsSL https://deb.nodesource.com/setup_10.x | bash -
       - apt install -y nodejs
-  prebuild:
+  pre_build:
     command:
       - echo Installing dependencies
       - npm install
