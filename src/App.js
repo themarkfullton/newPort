@@ -1,4 +1,5 @@
 import Intro from "./Containers/Intro";
+import "./assets/css/style.css";
 
 function App() {
   return (

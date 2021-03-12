@@ -13,7 +13,7 @@
   height: 100vh;
   width: 100%;
   background-color: #0099cc;
-  background-image: url("../../containers/Intro/beach.jpg");
+  background-image: url("./../../Containers/Intro/beach.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
