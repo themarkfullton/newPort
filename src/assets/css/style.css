@@ -23,11 +23,11 @@
   letter-spacing: 0.35vw;
 }
 .navbarWrapper .navbarContainer .navbarLinks {
-  font-size: 12px;
+  font-size: 10px;
 }
 @media screen and (min-width: 320px) {
   .navbarWrapper .navbarContainer .navbarLinks {
-    font-size: calc( 12px + 6 * ((100vw - 320px) / 880) );
+    font-size: calc( 10px + 8 * ((100vw - 320px) / 880) );
   }
 }
 @media screen and (min-width: 1200px) {
@@ -122,11 +122,11 @@
   margin-bottom: 2vh;
 }
 .introContainer .introText h1 {
-  font-size: 47px;
+  font-size: 37px;
 }
 @media screen and (min-width: 320px) {
   .introContainer .introText h1 {
-    font-size: calc( 47px + 23 * ((100vw - 320px) / 880) );
+    font-size: calc( 37px + 33 * ((100vw - 320px) / 880) );
   }
 }
 @media screen and (min-width: 1200px) {
@@ -139,11 +139,11 @@
   margin-bottom: 0.5em;
 }
 .introContainer .introText h2 {
-  font-size: 15px;
+  font-size: 12px;
 }
 @media screen and (min-width: 320px) {
   .introContainer .introText h2 {
-    font-size: calc( 15px + 5 * ((100vw - 320px) / 880) );
+    font-size: calc( 12px + 8 * ((100vw - 320px) / 880) );
   }
 }
 @media screen and (min-width: 1200px) {
@@ -230,16 +230,25 @@
   }
 }
 @media (max-width: 900px) {
+  .introContainer .introText {
+    width: 75%;
+  }
   .introContainer .adventureImage {
     width: 35vw;
   }
 }
 @media (max-width: 800px) {
+  .introContainer .introText {
+    width: 75%;
+  }
   .introContainer .adventureImage {
     width: 40vw;
   }
 }
 @media (max-width: 629px) {
+  .introContainer .introText {
+    width: 75%;
+  }
   .introContainer .adventureImage {
     width: 50vw;
   }
@@ -446,47 +455,57 @@
     font-size: 35px;
   }
 }
+.wHComponentWrapper .wHTextSide .wHTime {
+  font-family: "Staatliches", cursive;
+  margin-bottom: 0.5em;
+}
+.wHComponentWrapper .wHTextSide .wHTime {
+  font-size: 15px;
+}
+@media screen and (min-width: 320px) {
+  .wHComponentWrapper .wHTextSide .wHTime {
+    font-size: calc( 15px + 13 * ((100vw - 320px) / 880) );
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wHComponentWrapper .wHTextSide .wHTime {
+    font-size: 28px;
+  }
+}
 .wHComponentWrapper .wHTextSide .wHBullets {
   margin-top: 3vw;
+  width: 95%;
 }
-.wHComponentWrapper .wHTextSide .wHBullets ul {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 97%;
+.wHComponentWrapper .wHTextSide .wHBullets table {
+  width: 100%;
+  border-spacing: 0.6vw;
 }
-.wHComponentWrapper .wHTextSide .wHBullets ul li {
-  display: inline;
-  padding: 0.5vw;
-  margin: 0.25em;
-  background: #000;
-  color: #0099cc;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: bolder;
-}
-.wHComponentWrapper .wHTextSide .wHBullets ul li {
+.wHComponentWrapper .wHTextSide .wHBullets table {
   font-size: 10px;
 }
 @media screen and (min-width: 320px) {
-  .wHComponentWrapper .wHTextSide .wHBullets ul li {
+  .wHComponentWrapper .wHTextSide .wHBullets table {
     font-size: calc( 10px + 10 * ((100vw - 320px) / 880) );
   }
 }
 @media screen and (min-width: 1200px) {
-  .wHComponentWrapper .wHTextSide .wHBullets ul li {
+  .wHComponentWrapper .wHTextSide .wHBullets table {
     font-size: 20px;
   }
+}
+.wHComponentWrapper .wHTextSide .wHBullets table td {
+  width: 50%;
+  text-align: center;
+  background-color: #000;
+  color: #0099cc;
+  font-weight: bold;
 }
 
 .footerWrapper {
   position: relative;
   width: 100%;
   bottom: 0;
-  margin: 20vw 0 0 0;
+  margin: 3vw 0 0 0;
   background: #000;
   padding-bottom: 5vh;
 }

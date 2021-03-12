@@ -32,13 +32,13 @@
         border-bottom: 1px solid $text-colour;
         padding-bottom: 1vh;
         margin-bottom: 2vh;
-        @include fluid-type(320px, 1200px, 47px, 70px);
+        @include fluid-type(320px, 1200px, 37px, 70px);
       }
     
       h2 {
         color: $text-colour;
         margin-bottom: .5em;
-        @include fluid-type(320px, 1200px, 15px, 20px);
+        @include fluid-type(320px, 1200px, 12px, 20px);
       }
     
       p {
@@ -92,6 +92,9 @@
   
   @media (max-width: 900px) {
     .introContainer {
+      .introText {
+        width: 75%;
+      }
       .adventureImage {
         width: 35vw;
       }
@@ -100,6 +103,10 @@
   
   @media (max-width: 800px) {
     .introContainer {
+      .introText {
+        width: 75%;
+      }
+
       .adventureImage {
         width: 40vw;
       }
@@ -108,6 +115,10 @@
   
   @media (max-width: 629px) {
     .introContainer {
+      .introText {
+        width: 75%;
+      }
+      
       .adventureImage {
         width: 50vw;
       }
