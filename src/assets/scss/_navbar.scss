@@ -23,11 +23,12 @@
         a {
           margin-right: 3vw;
           text-decoration: none;
-          color: $primary-colour;
+          color: $text-colour;
           @include transition-time;
   
           &:hover {
-            color: $highlight-colour;
+            color: $primary-colour;
+            cursor: pointer;
           }
         }
       }
@@ -39,11 +40,12 @@
   
         a {
           margin-right: 2vw;
-          color: $primary-colour;
+          color: $text-colour;
           @include transition-time;
   
           &:hover {
-            color: $highlight-colour;
+            color: $primary-colour;
+            cursor: pointer;
           }
         }
       }

@@ -1,0 +1,31 @@
+.footerWrapper {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin: 20vw 0 0 0;
+    background: $text-colour;
+    padding-bottom: 5vh;
+  
+    &:before {
+      content: "";
+      position: relative;
+      background: $text-colour;
+      top: 0;
+      display: block;
+      height: 10vh;
+      left: 0;
+      right: 0;
+      transform: skewY(1.5deg);
+      transform-origin: 100%;
+      z-index: 2;
+    }
+    .footerContainer {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: bolder;
+      font-style: italic;
+      color: $tertiary-colour;
+    }
+  }
+  
