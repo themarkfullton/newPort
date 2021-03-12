@@ -22,9 +22,6 @@ function Navbar() {
                     <a href="https://twitter.com/FulltonThe" target="_blank">
                         <i className="fab fa-twitter fa-2x"></i>
                     </a>
-                    <a href="mailto:the.mark.fullton@gmail.com" target="_blank">
-                        <i className="fas fa-envelope-open-text fa-2x"></i>
-                    </a>
                 </div>
             </div>
         </div>
