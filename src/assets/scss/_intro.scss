@@ -15,55 +15,62 @@
     text-align: center;
     overflow: hidden;
     z-index: 5;
-  
-    h1 {
-      color: $primary-colour;
-      font-family: $header-font-fam;
-      letter-spacing: 0.95rem;
-      line-height: 1em;
-      border-top: 1px solid $primary-colour;
-      padding-top: 1vh;
-      border-bottom: 1px solid $primary-colour;
-      padding-bottom: 1vh;
-      margin-bottom: 2vh;
-      @include fluid-type(320px, 1200px, 47px, 70px);
-    }
-  
-    h2 {
-      color: $primary-colour;
-      margin-bottom: .5em;
-      @include fluid-type(320px, 1200px, 15px, 20px);
-    }
-  
-    p {
-      a {
-        display: inline-block;
-        color: $primary-colour;
-        text-decoration: none;
-  
-        margin: 0 0.5em;
-        @include transition-time;
-        @include fluid-type(320px, 1200px, 13px, 18px);
-  
-        &:hover {
-          color: $highlight-colour;
-          transition: all 0.5s ease-in-out;
+
+    .introText {
+      padding: 5vw;
+      background-color: rgba(255,255,255,0.5);
+      border-radius: 25px;
+      
+      h1 {
+        color: $text-colour;
+        font-family: $header-font-fam;
+        letter-spacing: 0.95rem;
+        line-height: 1em;
+        margin-top: 2vh;
+        border-top: 1px solid $text-colour;
+        padding-top: 1vh;
+        border-bottom: 1px solid $text-colour;
+        padding-bottom: 1vh;
+        margin-bottom: 2vh;
+        @include fluid-type(320px, 1200px, 47px, 70px);
+      }
+    
+      h2 {
+        color: $text-colour;
+        margin-bottom: .5em;
+        @include fluid-type(320px, 1200px, 15px, 20px);
+      }
+    
+      p {
+        a {
+          display: inline-block;
+          color: $text-colour;
+          text-decoration: none;
+    
+          margin: 0 0.5em;
+          @include transition-time;
+          @include fluid-type(320px, 1200px, 13px, 18px);
+    
+          &:hover {
+            color: $tertiary-colour;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+    
+        span {
+          font-weight: bolder;
         }
       }
-  
-      span {
-        font-weight: bolder;
+    
+      .adventureImage {
+        position: absolute;
+        bottom: 3vw;
+        left: 3vw;
+        width: 30vw;
+        animation: surf 5s infinite ease-in-out;
+        z-index: 9;
+        @include transition-time;
       }
-    }
-  
-    .adventureImage {
-      position: absolute;
-      bottom: 3vw;
-      left: 3vw;
-      width: 30vw;
-      animation: surf 5s infinite ease-in-out;
-      z-index: 9;
-      @include transition-time;
     }
   }
   

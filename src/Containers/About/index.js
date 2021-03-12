@@ -6,6 +6,7 @@ function About() {
         <p>Flexible programmer with four years work experience with non-profits and start ups. Accustomed to taking responsibility for projects as a whole and translating business requirements to technical deliverables. Learning obsessed and driven to find innovative solutions for impossible answers.</p>
         <br />
         <h2><i className="fas fa-anchor"></i>Top 6 Languages</h2>
+        <p>Click on the language to see a sample project. <b>More projects (and tutorials) can be found on <a href="https://github.com/themarkfullton" target="_blank">GitHub</a></b></p>
         <table>
             <tr>
                 <td><a href="https://github.com/themarkfullton/patchwork-back-end" target="_blank">Java</a></td>
