@@ -55,8 +55,21 @@
               width: 30%;
               text-align: center;
               background-color: $text-colour;
-              color: $tertiary-colour;
               font-weight: bold;
+
+            a {
+                color: $tertiary-colour;
+
+                &:hover {
+                    color: $primary-colour;
+                    @include transition-time;    
+                }
+            }
+
+              &:hover {
+                transform: scale(.95);
+                @include transition-time;
+              }
           }
       }
     }

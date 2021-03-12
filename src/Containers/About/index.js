@@ -8,14 +8,14 @@ function About() {
         <h2><i className="fas fa-anchor"></i>Top 6 Languages</h2>
         <table>
             <tr>
-                <td>Java</td>
-                <td>C++</td>
-                <td>Python</td>
+                <td><a href="https://github.com/themarkfullton/patchwork-back-end" target="_blank">Java</a></td>
+                <td><a href="https://github.com/themarkfullton/opencv-practise" target="_blank">C++</a></td>
+                <td><a href="https://github.com/themarkfullton/blog-backend" target="_blank">Python</a></td>
             </tr>
             <tr>
-                <td>Golang</td>
-                <td>JavaScript</td>
-                <td>SQL</td>
+                <td><a href="https://github.com/themarkfullton/transformation-api-v2" target="_blank">Golang</a></td>
+                <td><a href="https://github.com/themarkfullton/transformation-app-v2" target="_blank">JavaScript</a></td>
+                <td><a href="" target="_blank">SQL</a></td>
             </tr>
         </table>
       </div>

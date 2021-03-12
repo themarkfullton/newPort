@@ -303,8 +303,21 @@
   width: 30%;
   text-align: center;
   background-color: #000;
-  color: #0099cc;
   font-weight: bold;
+}
+.aboutWrapper .aboutContainer table td a {
+  color: #0099cc;
+}
+.aboutWrapper .aboutContainer table td a:hover {
+  color: #fff;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+.aboutWrapper .aboutContainer table td:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
 }
 
 body {
