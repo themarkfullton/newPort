@@ -345,35 +345,34 @@
   width: 90%;
   margin: 5vh auto;
 }
-.workHistoryWrapper .workHistoryContainer h1 {
+.workHistoryWrapper .workHistoryContainer h2 {
   color: #000;
   font-family: "Staatliches", cursive;
   letter-spacing: 0.95rem;
   line-height: 1.5em;
-  border-bottom: 1px solid #fff;
   padding-bottom: 1vh;
   margin-bottom: 2vh;
 }
-.workHistoryWrapper .workHistoryContainer h1 {
+.workHistoryWrapper .workHistoryContainer h2 {
   font-size: 30px;
 }
 @media screen and (min-width: 320px) {
-  .workHistoryWrapper .workHistoryContainer h1 {
+  .workHistoryWrapper .workHistoryContainer h2 {
     font-size: calc( 30px + 10 * ((100vw - 320px) / 880) );
   }
 }
 @media screen and (min-width: 1200px) {
-  .workHistoryWrapper .workHistoryContainer h1 {
+  .workHistoryWrapper .workHistoryContainer h2 {
     font-size: 40px;
   }
 }
-.workHistoryWrapper .workHistoryContainer h1 a {
+.workHistoryWrapper .workHistoryContainer h2 a {
   opacity: 0.7;
   color: #000;
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
 }
-.workHistoryWrapper .workHistoryContainer h1 a:hover {
+.workHistoryWrapper .workHistoryContainer h2 a:hover {
   opacity: 1;
 }
 .workHistoryWrapper .workHistoryContainer .workHistoryNavbar {

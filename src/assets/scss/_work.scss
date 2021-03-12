@@ -6,12 +6,11 @@
       width: 90%;
       margin: 5vh auto;
   
-      h1 {
+      h2 {
         color: $text-colour;
         font-family: $header-font-fam;
         letter-spacing: 0.95rem;
         line-height: 1.5em;
-        border-bottom: 1px solid $primary-colour;
         padding-bottom: 1vh;
         margin-bottom: 2vh;
         @include fluid-type(320px, 1200px, 30px, 40px);

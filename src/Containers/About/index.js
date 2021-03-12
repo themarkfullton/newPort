@@ -1,11 +1,13 @@
 function About() {
     return (
-    <div className="aboutWrapper">
+    <div id="about" className="aboutWrapper">
       <div className="aboutContainer">
         <h2><i className="fas fa-anchor"></i> Who Am I?</h2>
-        <p>Flexible programmer with four years work experience with non-profits and start ups. Accustomed to taking responsibility for projects as a whole and translating business requirements to technical deliverables. Learning obsessed and driven to find innovative solutions for impossible answers.</p>
+        <p>Little has changed since I picked up my first C++ / DirectX book as a kid--I'm still knees-deep in research, excitedly trying to build programs to solve real-world problems.</p>
+        <p>Owing to my obsession with fixing problems, a majority of my 4+ years experience has been with start-ups/non-profits and my skillset is varied as a result.</p>
+        <p>I'm accustomed to taking ownership of projects as a whole (as opposed to fixating on the specific area to which I've been assigned) and the concept of 9-5 makes little sense to me. I don't work for pay; I work for solutions.</p>
         <br />
-        <h2><i className="fas fa-anchor"></i> Top 6 Languages</h2>
+        <h2 id="projects"><i className="fas fa-anchor"></i> Top 6 Languages</h2>
         <p>Click on the language to see a sample project. <b>More projects (and tutorials) can be found on <a href="https://github.com/themarkfullton" target="_blank">GitHub</a></b></p>
         <table>
             <tr>

@@ -1,13 +1,15 @@
+import { HashLink as Link } from 'react-router-hash-link';
+
 function Navbar() {
     return (
         <div className="navbarWrapper">
             <div className="navbarContainer">
                 <div className="navbarLinks">
                     <p>
-                            <a><i className="fas fa-anchor"></i></a>
-                            <a>About</a>
-                            <a>Projects</a>
-                            <a>Resume</a>
+                            <Link smooth to="/#intro"><i className="fas fa-anchor"></i></Link>
+                            <Link smooth to="/#about">About</Link>
+                            <Link smooth to="/#projects">Projects</Link>
+                            <Link smooth to="/#resume">Resume</Link>
                     </p>
                 </div>
                 <div className="navbarSocial">

@@ -2,7 +2,7 @@ import Adventure from "./adventure.png";
 
 function Intro() {
     return (
-      <div className="introContainer">
+      <div id="intro" className="introContainer">
         <div className="introText">
           <h2>Data Engineer & Full Stack Web Developer</h2>
           <h1>Mark Fullton</h1>
