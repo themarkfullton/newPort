@@ -31,7 +31,7 @@
   
     h2 {
       color: $primary-colour;
-      margin-bottom: 1em;
+      margin-bottom: .5em;
       @include fluid-type(320px, 1200px, 15px, 20px);
     }
   

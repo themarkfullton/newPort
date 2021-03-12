@@ -1,4 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&family=Staatliches&display=swap");
+.navbarWrapper {
+  width: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: #0099cc;
+}
+.navbarWrapper .navbarContainer {
+  width: 97%;
+  height: 3vh;
+  margin: 10px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navbarWrapper .navbarContainer .navbarLinks {
+  display: inline-block;
+  float: left;
+  margin-left: 3vw;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.35vw;
+}
+.navbarWrapper .navbarContainer .navbarLinks {
+  font-size: 12px;
+}
+@media screen and (min-width: 320px) {
+  .navbarWrapper .navbarContainer .navbarLinks {
+    font-size: calc( 12px + 6 * ((100vw - 320px) / 880) );
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbarWrapper .navbarContainer .navbarLinks {
+    font-size: 18px;
+  }
+}
+.navbarWrapper .navbarContainer .navbarLinks a {
+  margin-right: 3vw;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+.navbarWrapper .navbarContainer .navbarLinks a:hover {
+  color: #ffcc11;
+}
+.navbarWrapper .navbarContainer .navbarSocial {
+  display: inline-block;
+  float: right;
+  margin-right: 3vw;
+}
+.navbarWrapper .navbarContainer .navbarSocial a {
+  margin-right: 2vw;
+  color: #fff;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+.navbarWrapper .navbarContainer .navbarSocial a:hover {
+  color: #ffcc11;
+}
+.navbarWrapper:after {
+  content: "";
+  background: inherit;
+  top: 0;
+  display: block;
+  height: 10vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-transform: skewY(-1.2deg);
+          transform: skewY(-1.2deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+
 .introContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,7 +128,7 @@
 }
 .introContainer h2 {
   color: #fff;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .introContainer h2 {
   font-size: 15px;
@@ -218,6 +294,17 @@
 }
 .aboutWrapper .aboutContainer a:hover {
   color: #ffcc11;
+}
+.aboutWrapper .aboutContainer table {
+  width: 100%;
+  border-spacing: 0.6vw;
+}
+.aboutWrapper .aboutContainer table td {
+  width: 30%;
+  text-align: center;
+  background-color: #000;
+  color: #0099cc;
+  font-weight: bold;
 }
 
 body {

@@ -46,6 +46,19 @@
           color: $highlight-colour;
         }
       }
+
+      table {
+          width: 100%;
+          border-spacing: .6vw;
+
+          td {
+              width: 30%;
+              text-align: center;
+              background-color: $text-colour;
+              color: $tertiary-colour;
+              font-weight: bold;
+          }
+      }
     }
   }
   

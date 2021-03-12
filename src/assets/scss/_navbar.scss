@@ -1,0 +1,66 @@
+.navbarWrapper {
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10;  
+    background-color: $tertiary-colour;
+  
+    .navbarContainer {
+      width: 97%;
+      height: 3vh;
+      margin: 10px auto;
+      justify-content: space-between;
+  
+      .navbarLinks {
+        display: inline-block;
+        float: left;
+        margin-left: 3vw;
+        font-family: $header-font-fam;
+        letter-spacing: 0.35vw;
+        @include fluid-type(320px, 1200px, 12px, 18px);
+  
+        a {
+          margin-right: 3vw;
+          text-decoration: none;
+          color: $primary-colour;
+          @include transition-time;
+  
+          &:hover {
+            color: $highlight-colour;
+          }
+        }
+      }
+  
+      .navbarSocial {
+        display: inline-block;
+        float: right;
+        margin-right: 3vw;
+  
+        a {
+          margin-right: 2vw;
+          color: $primary-colour;
+          @include transition-time;
+  
+          &:hover {
+            color: $highlight-colour;
+          }
+        }
+      }
+    }
+
+    &:after {
+        content: "";
+        background: inherit;
+        top: 0;
+        display: block;
+        height: 10vh;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        transform: skewY(-1.2deg);
+        transform-origin: 100% 0;
+      }
+  }
+  
