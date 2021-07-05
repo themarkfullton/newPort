@@ -8,7 +8,8 @@ function Navbar() {
                     <p>
                             <Link smooth to="/#intro"><i className="fas fa-anchor"></i></Link>
                             <Link smooth to="/#about">About</Link>
-                            <Link smooth to="/#projects">Projects</Link>
+                            <Link smooth to="/#dashboard">Projects</Link>
+                            <Link smooth to="/#dashboard">Tutoring</Link>
                             <Link smooth to="/#resume">Resume</Link>
                     </p>
                 </div>

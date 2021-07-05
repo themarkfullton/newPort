@@ -7,9 +7,15 @@ function WorkHistory(){
         <div id="resume" className="workHistoryWrapper">
             <div className="workHistoryContainer">
                 <Router>
-                    <h2><i className="fas fa-anchor"></i> Work History <a href="https://docs.google.com/document/d/1G8vSpxk5fgsGQKU68AD8qn_hNpKli4KAtbjFJwTeyks/edit?usp=sharing" target="_blank"><i class="fas fa-file-download"></i></a></h2>
+                    <h2><i className="fas fa-anchor"></i> Resume <a href="https://docs.google.com/document/d/1NpzYCnu_ymNVRJ3Boe7f8mRMwkuwMXfgybfNKscPSt4/edit?usp=sharing" target="_blank"><i class="fas fa-file-download"></i></a></h2>
 
                     <div className="workHistoryNavbar">
+                    <NavLink to={{
+                            pathname: "/",
+                            title: "ta",
+                            time: "current",
+                            bullets: [["Data Analytics", "Full Stack Web Dev"], ["Debugging", "Explaining"], ["Mentoring", "Repo Maintaining"]]
+                        }} className="workHistItem">TA/Tutor</NavLink>
                         <NavLink to={{
                             pathname: "/",
                             title: "data",
@@ -22,12 +28,6 @@ function WorkHistory(){
                             time: "4 years",
                             bullets: [["C++", "Java"], ["SQL", "JavaScript"], ["Python", "Go"], ["Linux", "Postgre"], ["MongoDB", "Docker"], ["AWS", "GCP"], ["Nodejs", "Django"]]
                         }} className="workHistItem">Programmer</NavLink>
-                        <NavLink to={{
-                            pathname: "/",
-                            title: "ta",
-                            time: "current",
-                            bullets: [["Data Analytics", "Full Stack Web Dev"], ["Debugging", "Explaining"], ["Mentoring", "Repo Maintaining"]]
-                        }} className="workHistItem">TA/Tutor</NavLink>
                     </div>
                     <div className="projectContainer">
                         <Switch>
