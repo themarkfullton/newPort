@@ -1,0 +1,3 @@
+class_id,university_id,class_start,class_end,class_time,office_hours,total_instructors,total_tas,total_students
+1,10,2020-12-01,2021-06-01,MON-WED,SUN,2,8,80
+2,10,2021-06-01,2021-12-01,TUES-THURS,SAT,1,7,73
