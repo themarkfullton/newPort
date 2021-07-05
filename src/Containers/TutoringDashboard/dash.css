@@ -1,0 +1,128 @@
+.dashboardHeader {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+}
+
+.dashboardHeader button {
+    border-radius: 50px;
+    margin: 0 .5em;
+    font-size: 1em;
+    padding: .5em;
+    color: #fff;
+    font-family: "Questrial", sans-serif;
+    transition-duration: .5s;
+}
+
+.notSelected {
+    border: .25em solid #fff;
+    background-color: #0099cc;
+}
+
+.notSelected:hover {
+    color: #0099cc;
+    background-color: #fff;
+    transition-duration: .5s;
+}
+
+.currentData {
+    border: .25em solid goldenrod;
+    background-color: goldenrod;
+}
+
+.currentData:hover {
+    border: .25em solid goldenrod;
+    background-color: goldenrod;
+}
+
+.dashboardBody {
+    width: 100%;
+}
+
+.dashRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+#studentStatsGraph {
+    width: 40%;
+    padding: 5vw;
+    text-align: center;
+    color: #fff;
+}
+
+#studentStatsGraph h2 {
+    color: goldenrod;
+    font-size: 3em;
+    font-weight: boldest;
+    margin-top: .5em !important;
+    margin-bottom: .5em !important;
+}
+
+#topicsGraph {
+    width: 40%;
+    padding: 5vw;
+  }
+
+  #topicsGraph text {
+      font-family: helvetica;
+  }
+  
+
+#sessionGraph {
+    width: 100%;
+    padding: 5vw;
+  }
+  
+  #sessionGraph h3{
+    color: #fff;
+  }
+
+  svg {
+    overflow: visible;
+  }
+
+  #sessionGraph text {
+    fill: #fff;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .axis .domain, .axis.xAxis line {
+    display: none;
+  }
+
+  @media only screen and (min-width: 900px){
+    #sessionGraph {
+        padding: 0 !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .dashRow {
+        flex-direction: column-reverse;
+    }
+
+    #studentStatsGraph {
+        width: 100%;
+        padding: 0;
+    }
+
+    #topicsGraph {
+        width: 100%;
+        padding: 0;
+    }
+    
+    #sessionGraph {
+        padding: 10vw;
+    }
+
+    #sessionGraph text {
+        fill: #fff;
+        color: #fff;
+        font-size: 20px;
+      }
+  }

@@ -10,12 +10,12 @@ import TutoringDashboard from "./Containers/TutoringDashboard";
 function App() {
   return (
     <div className="App">
-        {/* <Navbar/>
+        <Navbar/>
         <Intro />
         <About />
-        <WorkHistory />
-        <Footer /> */}
         <TutoringDashboard />
+        <WorkHistory />
+        <Footer />
     </div>
   );
 }

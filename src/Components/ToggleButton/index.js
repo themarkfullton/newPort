@@ -1,13 +1,17 @@
 const ToggleButton = (props) => {
+    const {filter, text, currFilter} = props;
+    const checker = {
+        "Data": "data",
+        "Web": "web",
+        "Total": "all"
+    }
+    const thisClassName = checker[text] == currFilter ? "currentData" : "notSelected";
     const handleClick = () => {
-        setTimeout(() => {}, 4000);
-        props.toggleFunction(props.filter)
-        setTimeout(props.toggleLoaded(false), 50000);
-        props.loadData();
+        props.toggleFunction(filter)
     }
 
     return (
-        <button onClick={handleClick}>{props.text}</button>
+        <button className={thisClassName} onClick={handleClick}>{text}</button>
     )
 }
 

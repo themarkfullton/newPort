@@ -1,14 +1,13 @@
 import React, {useEffect, useState} from "react";
 import * as d3 from "d3";
-import useD3Transition from "use-d3-transition";
 
 const SessionStats = (props) => {
     const [activeIndex, setActiveIndex] = useState(null);
-    const {data} = props;
+    const {data, filter} = props;
 
     const margin = { top: 40, right: 80, bottom: 60, left: 50 },
-        width = 550 - margin.left - margin.right,
-        height = 300 - margin.top - margin.bottom,
+        width = 800 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom,
         color = "white";
 
     const yMinValue = d3.min(data, (d) => d.hours_total);
@@ -57,14 +56,13 @@ const SessionStats = (props) => {
         setActiveIndex(index);
     }
 
-    
-    
     const handleMouseLeave = () => {
         setActiveIndex(null);
     }
 
     return (
         <div id="sessionGraph">
+            <h3>Daily Hours Tutored - {filter.charAt(0).toUpperCase() + filter.slice(1)}</h3>
             <svg
               viewBox={`0 0 ${width + margin.left + margin.right} 
                               ${height + margin.top + margin.bottom}`}
