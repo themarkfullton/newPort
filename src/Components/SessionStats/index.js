@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import * as d3 from "d3";
+import useD3Transition from "use-d3-transition";
 
 const SessionStats = (props) => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -56,6 +57,8 @@ const SessionStats = (props) => {
         setActiveIndex(index);
     }
 
+    
+    
     const handleMouseLeave = () => {
         setActiveIndex(null);
     }
