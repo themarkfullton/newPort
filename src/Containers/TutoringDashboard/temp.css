@@ -1,5 +1,11 @@
+.dashboardBody {
+    width: 100%;
+}
+
 #sessionGraph {
-    padding: 80px 40px;
+    display: block;
+    width: 90%;
+    margin: 0 auto !important;
   }
   
   svg {

@@ -1,7 +1,8 @@
 const ToggleButton = (props) => {
     const handleClick = () => {
-        setTimeout(props.toggleFunction(props.filter), 1000)
-        props.toggleLoaded(false);
+        setTimeout(() => {}, 4000);
+        props.toggleFunction(props.filter)
+        setTimeout(props.toggleLoaded(false), 50000);
         props.loadData();
     }
 

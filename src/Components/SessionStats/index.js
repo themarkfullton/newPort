@@ -3,11 +3,11 @@ import * as d3 from "d3";
 
 const SessionStats = (props) => {
     const [activeIndex, setActiveIndex] = useState(null);
-    const {data, loaded} = props;
+    const {data} = props;
 
     const margin = { top: 40, right: 80, bottom: 60, left: 50 },
-        width = 960 - margin.left - margin.right,
-        height = 280 - margin.top - margin.bottom,
+        width = 550 - margin.left - margin.right,
+        height = 300 - margin.top - margin.bottom,
         color = "white";
 
     const yMinValue = d3.min(data, (d) => d.hours_total);
@@ -60,7 +60,7 @@ const SessionStats = (props) => {
         setActiveIndex(null);
     }
 
-    return loaded ? (
+    return (
         <div id="sessionGraph">
             <svg
               viewBox={`0 0 ${width + margin.left + margin.right} 
@@ -74,25 +74,27 @@ const SessionStats = (props) => {
                   ref={getXAxis}
                   transform={`translate(0,${height})`}
               />
-              <path fill={color} d={areaPath} opacity={0.3} />
-              <path strokeWidth={3} fill="none" stroke={color} d={linePath} />
+              <path fill={color} d={areaPath} opacity={0.45} />
+              <path strokeWidth={2} fill="none" stroke={color} d={linePath} />
 
               {data.map((sess, idx) => {
                   return (
                       <g key={idx}>
                           <text
-                              fill="#666"
+                              fill="goldenrod"
+                              stroke="goldenrod"
                               x={getX(sess.session_date)}
                               y={getY(sess.hours_total) - 20}
                               textAnchor="middle"
+                              style={{ transition: "ease-out .2s" }}
                           >
                               {idx === activeIndex ? sess.hours_total : ""}
                           </text>
                           <circle
                               cx={getX(sess.session_date)}
                               cy={getY(sess.hours_total)}
-                              r={idx === activeIndex ? 6 : 4}
-                              fill={color}
+                              r={idx === activeIndex ? 6 : 0}
+                              fill={idx === activeIndex ? "goldenrod" : color}
                               strokeWidth={idx === activeIndex ? 2 : 0}
                               stroke="#fff"
                               style={{ transition: "ease-out .1s" }}
@@ -102,8 +104,6 @@ const SessionStats = (props) => {
               })}
           </svg>
         </div>
-    ) : (
-        <div>Loading...</div>
     )
 }
 

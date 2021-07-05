@@ -17,7 +17,9 @@ const TutoringDashboard = () => {
                 sess.session_date = parseDate(sess.session_date);
                 sess.hours_total = +sess.hours_total;
             });
-            setTimeout(setSessData(d), 1000)
+            setTimeout(() => {}, 4000);
+            setSessData(d)
+            setTimeout(() => {}, 10000);
             setLoaded(true);
         });
     }
@@ -37,7 +39,7 @@ const TutoringDashboard = () => {
             <ToggleButton text="Web" filter="web" toggleFunction={setTutorFilter} toggleLoaded={setLoaded} loadData={loadData} />
         </div>
         <div className="dashboardBody">
-            <SessionStats loaded={loaded} data={sessData} />
+            {loaded ? <SessionStats data={sessData} /> : ""}
             <div id="studentStats"></div>
             <div id="topicStats"></div>
         </div>
