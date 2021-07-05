@@ -29,7 +29,7 @@ const TutoringDashboard = () => {
     }
 
     const loadStuData = () => {
-        d3.csv("https://raw.githubusercontent.com/themarkfullton/newPort/dashboard/main/data/generated/students_bootcamp.csv").then((s) => {
+        d3.csv("https://raw.githubusercontent.com/themarkfullton/newPort/main/data/generated/students_bootcamp.csv").then((s) => {
             s.forEach((stu) => {
                 stu.number_students = +stu.number_students
             });
