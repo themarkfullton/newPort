@@ -29,7 +29,7 @@ const TutoringDashboard = () => {
     }
 
     const loadStuData = () => {
-        d3.csv("https://raw.githubusercontent.com/themarkfullton/newPort/dashboard/data/generated/students_bootcamp.csv").then((s) => {
+        d3.csv("https://raw.githubusercontent.com/themarkfullton/newPort/dashboard/main/generated/students_bootcamp.csv").then((s) => {
             s.forEach((stu) => {
                 stu.number_students = +stu.number_students
             });
@@ -39,7 +39,7 @@ const TutoringDashboard = () => {
     }
 
     const loadTopicData = () => {
-        var topicDataURL = `https://raw.githubusercontent.com/themarkfullton/newPort/dashboard/data/generated/topics_${tutorFilter}.csv`
+        var topicDataURL = `https://raw.githubusercontent.com/themarkfullton/newPort/main/data/generated/topics_${tutorFilter}.csv`
         d3.csv(topicDataURL).then((t) => {
             t.forEach((topic) => {
                 topic.topic_count = +topic.topic_count
