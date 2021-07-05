@@ -1,0 +1,17 @@
+#sessionGraph {
+    padding: 80px 40px;
+  }
+  
+  svg {
+    overflow: visible;
+  }
+  
+  text {
+    fill: #fff;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .axis .domain, .axis.xAxis line {
+    display: none;
+  }
